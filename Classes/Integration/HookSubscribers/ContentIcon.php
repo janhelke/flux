@@ -188,11 +188,11 @@ class ContentIcon
     }
 
     /**
-     * @return string|NULL
+     * @return string
      */
     protected function getCookie()
     {
-        return true === isset($_COOKIE['fluxCollapseStates']) ? $_COOKIE['fluxCollapseStates'] : null;
+        return true === isset($_COOKIE['fluxCollapseStates']) ? $_COOKIE['fluxCollapseStates'] : '';
     }
 
     /**
